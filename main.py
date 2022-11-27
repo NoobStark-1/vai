@@ -8,8 +8,8 @@ db=client["stark-db"]
 
 collection=db["test-collection"]
 
-post = {"author": "Mike",
-        "text": "My first blog post!",
+post = {"author": "stark",
+        "text": "My first db",
         "tags": ["mongodb", "python", "pymongo"],
         "date": datetime.datetime.utcnow()}
         
