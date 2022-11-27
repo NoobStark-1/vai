@@ -6,8 +6,6 @@ client=MongoClient("mongodb+srv://stark:liyaxlambert@cluster0.pdabrye.mongodb.ne
 
 db=client["stark-db"]
 
-collection=db.test
-
 collection=db["test-collection"]
 
 post = {"author": "Mike",
