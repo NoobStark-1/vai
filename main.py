@@ -2,7 +2,7 @@ import datetime
 import pymongo
 from pymongo import MongoClient
 
-client=MongoClient("mongodb+srv://stark:liyaxlambert@cluster0.pdabrye.mongodb.net/?retryWrites=true&w=majority")
+client=MongoClient("mongodb+srv://Stark:liyaxlambert@cluster0.qekel3r.mongodb.net/?retryWrites=true&w=majority")
 
 db=client["stark-db"]
 
