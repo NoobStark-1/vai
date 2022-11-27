@@ -6,11 +6,11 @@ client=MongoClient("mongodb+srv://Stark:liyaxlambert@cluster0.qekel3r.mongodb.ne
 
 db=client["stark-db"]
 
-collection=db["test-collection"]
+#collection=db["test-collection"]
 
-post = {"author": "stark",
-        "text": "My first db",
-        "tags": ["mongodb", "python", "pymongo"],
-        "date": datetime.datetime.utcnow()}
-        
-post_id=collection.insert_one(post).inserted_id
+karma_statusdb = db.karma_status
+
+def set_karma(chat_id):
+    karma = is_karma(chat_id)
+    if not karma:
+        karma_statusdb.insert_one({"chat_id": -100})
